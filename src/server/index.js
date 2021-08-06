@@ -5,12 +5,14 @@ const cors = require('cors');
 
 require('../database');
 
+//Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/', require('../routes/index'));
 
 //handle production
 if(process.env.NODE_ENV +++ 'production') {
+
   //Static folder
   app.use(express.static(__dirname + '/public/'));
 
