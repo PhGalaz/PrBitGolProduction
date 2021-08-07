@@ -73,6 +73,6 @@ async function getLives () {
   }
 }
 
-var interval = setInterval(function() { getLives(); }, 120000);
+var interval = setInterval(function() { getLives(); }, 1200000);
 
 module.exports = router;
